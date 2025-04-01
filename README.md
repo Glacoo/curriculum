@@ -1,88 +1,75 @@
-# 🚀 Portfólio  - Glauco Oliveira
+# 📄 Currículo Glauco Oliveira
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-[![Figma](https://img.shields.io/badge/Figma-FF6F61?style=flat&logo=figma&logoColor=white)](https://www.figma.com/)
 
-**Portfólio multifuncional destacando expertise em GPON, Cybersecurity, Análise de Dados e UX Design**
+**Currículo digital interativo com recursos dinâmicos e design moderno**
 
-[🔗 Acesse o Projeto Online](https:......) | 
-[📄 LinkedIn](https://www.linkedin.com/in/glauco-o-0a062b104/)
+[🔗 LinkedIn](https://www.linkedin.com/in/glauco-o-0a062b104/) | 
+[📁 Repositório GitHub](https://github.com/Glacoo/glacoo)
 
-![Preview do Portfólio](https://i.ibb.co/nsmqTCmZ/image-2025-04-01-101742264.png)
+![Preview do Currículo](https://i.ibb.co/vCdPKK3S/image-2025-04-01-135110842.png)
 
 ---
 
-## 📌 Sobre o Projeto
+## 🖥️ Sobre o Projeto
 
-Portfólio interativo desenvolvido para demonstrar habilidades técnicas e experiência profissional em:
-- **GPON/FTTH**: Monitoramento de redes ópticas e análise preditiva
-- **Cybersecurity**: Varredura de vulnerabilidades e testes OWASP
-- **Análise de Dados**: Visualização com Tableau e manipulação com Python
-- **UX Design**: Prototipagem profissional com Figma e Adobe XD
+Currículo online desenvolvido com tecnologias web modernas, apresentando:
+- **Experiência profissional** em redes GPON/FTTH
+- **Certificações técnicas** (Google, Cisco, Alura)
+- **Habilidades multidisciplinares** em Cybersecurity e Análise de Dados
+- **Projetos práticos** de desenvolvimento front-end
 
-Principais funcionalidades:
-✅ Navegação responsiva  
-✅ Seção de projetos interativos  
-✅ Exibição dinâmica de certificações  
-✅ Integração com GitHub e LinkedIn  
+Principais recursos:
+✅ Design responsivo  
+✅ Navegação por seções interativas  
+✅ Sistema de mudança de cores automática  
+✅ Integração com redes sociais profissionais  
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-### Frontend
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+### Core 
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
-### Design
-![Figma](https://img.shields.io/badge/Figma-FF6F61?style=flat&logo=figma&logoColor=white)
-![AdobeXD](https://img.shields.io/badge/Adobe_XD-FF61F6?style=flat&logo=adobe-xd&logoColor=white)
+### Design 
+[![Figma](https://img.shields.io/badge/Figma-FF6F61?style=flat&logo=figma&logoColor=white)](https://www.figma.com/)
+[![AdobeXD](https://img.shields.io/badge/Adobe_XD-FF61F6?style=flat&logo=adobe-xd&logoColor=white)](https://www.adobe.com/br/products/xd.html)
 
-### Cybersecurity
-![OWASP](https://img.shields.io/badge/OWASP-000000?style=flat&logo=owasp&logoColor=white)
-![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=flat&logo=cisco&logoColor=white)
-
-### Análise de Dados
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)
-
-### Versionamento
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+### DevOps 
+[![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/)
 
 ---
 
-## 🎯 Projetos Destacados
+## 📚 Seções Principais
 
-### 🕹️ Jogo do Número Secreto
-[![Live Demo](https://img.shields.io/badge/Live_Demo-008000?style=flat)](https://secret-number-beta-ten.vercel.app)
-- Interface interativa com validações
-- Sistema de feedback visual
-- Tecnologias: HTML5, CSS3, JavaScript
+### 🎓 Formação Acadêmica
+- **Análise e Desenvolvimento de Sistemas** (Estácio - Concluído)
+- **Pós-Graduação em Big Data** (Em andamento)
+- **Técnico em Instrumentação Industrial** (Senai)
 
-### 🎨 Web Dev Design System
-[![Figma](https://img.shields.io/badge/View_Figma-FF6F61?style=flat)](https://www.figma.com/file/sDKDQD3nANAi6lplyeUjKl/Web-Dev)
-- Componentes reutilizáveis
-- Guia de estilo completo
-- Fluxo de onboarding
+### 🔧 Experiência Profissional
+**SEREDE Telecomunicações** (2019-2024)  
+- Monitoramento de redes GPON/FTTH
+- Gestão de sistemas AMS/OMR/Netwin
+- Suporte técnico remoto
 
----
-
-## 📚 Certificações
-| Área              | Certificações                                                                 |
-|-------------------|-------------------------------------------------------------------------------|
-| **Google**        | UX Design • Cybersecurity (em andamento) • Análise de Dados (em andamento)   |
-| **Cisco**         | Introduction to Cybersecurity                                                 |
-| **Alura**         | HTML/CSS • JavaScript • Git/GitHub                                           |
-| **DIO**           | Linux • Banco de Dados • Fundamentos de Cibersegurança                       |
+### 🏆 Certificações
+| Plataforma  | Certificações |
+|-------------|---------------|
+| **Google**  | UX Design • Cybersecurity • Análise de Dados |
+| **Cisco**   | Introduction to Cybersecurity |
+| **Alura**   | HTML/CSS • JavaScript • Git |
 
 ---
 
-## 🖥️ Como Executar
+## 🚀 Como Executar
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/Glacoo/portfolio.git
+git clone https://github.com/Glacoo/curriculo.git
