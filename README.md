@@ -7,7 +7,7 @@
 **Currículo digital interativo com recursos dinâmicos e design moderno**
 
 [🔗 LinkedIn](https://www.linkedin.com/in/glauco-o-0a062b104/) | 
-[📁 Repositório GitHub](https://github.com/Glacoo/glacoo)
+[🌐 Versão Online](https://curriculum-chi-one.vercel.app)
 
 ![Preview do Currículo](https://i.ibb.co/vCdPKK3S/image-2025-04-01-135110842.png)
 
@@ -68,8 +68,10 @@ Principais recursos:
 
 ---
 
-## 🚀 Como Executar
+## 🚀 Como Executar Localmente
 
 1. Clone o repositório:
 ```bash
 git clone https://github.com/Glacoo/curriculo.git
+
+[🌐 Versão Online](https://curriculum-chi-one.vercel.app)
