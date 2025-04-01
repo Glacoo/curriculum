@@ -74,4 +74,4 @@ Principais recursos:
 ```bash
 git clone https://github.com/Glacoo/curriculo.git
 
-[🌐 Versão Online](https://curriculum-chi-one.vercel.app)
+
