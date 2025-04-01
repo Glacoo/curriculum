@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Profissional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #0a192f;
+            color: #8892b0;
+            line-height: 1.6;
+            display: flex;
+            min-height: 100vh;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        nav {
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            left: 50%;
+            transform: translateX(-800px);
+            top: 0;
+            padding: 2rem;
+            background: rgba(10, 25, 47, 0.95);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .nav-header {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        .nav-header h1 {
+            font-size: 2rem;
+            color: #ccd6f6;
+            margin-bottom: 0.5rem;
+            white-space: nowrap;
+        }
+
+        .nav-header h2 {
+            font-size: 1.2rem;
+            color: #64ffda;
+            margin-bottom: 1rem;
+        }
+
+        .nav-description {
+            font-size: 0.85rem;
+            color: #8892b0;
+            margin-bottom: 1.5rem;
+        }
+
+        .specialties {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .specialty-item {
+            background: rgba(100, 255, 218, 0.1);
+            color: #64ffda;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-bottom: auto;
+        }
+
+        nav ul li {
+            margin-bottom: 1rem;
+        }
+
+        nav a {
+            color: #8892b0;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.3s;
+            display: block;
+            padding: 0.5rem 0;
+        }
+
+        nav a:hover {
+            color: #64ffda;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: #8892b0;
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            color: #64ffda;
+        }
+
+        main {
+            margin-left: 250px;
+            width: calc(100% - 250px);
+            padding: 2rem 4rem;
+            max-width: 950px;
+        }
+
+        section {
+            min-height: auto;
+            padding: 2rem 5% 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        #experiencia {
+            padding-bottom: 1rem;
+        }
+
+        #projetos {
+            padding-top: 1rem;
+        }
+
+        .section-title {
+            color: #64ffda;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+        }
+
+        .experience-item h3 {
+            color: #ccd6f6;
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-list {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .tech-item {
+            background: rgba(100, 255, 218, 0.1);
+            color: #64ffda;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 1200px) {
+            body {
+                max-width: 100%;
+            }
+            
+            nav {
+                left: 0;
+                transform: none;
+                width: 220px;
+            }
+
+            main {
+                margin-left: 220px;
+                width: calc(100% - 220px);
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            nav {
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 1rem;
+            }
+
+            .nav-header {
+                text-align: center;
+            }
+
+            .specialties {
+                justify-content: center;
+            }
+
+            .social-links {
+                justify-content: center;
+                margin-top: 1rem;
+            }
+
+            main {
+                margin-left: 0;
+                width: 100%;
+                padding: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+
+            .project-item {
+                padding: 1.5rem;
+            }
+
+            .project-image {
+                max-width: 100%;
+            }
+
+            .certifications-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .focus-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .specialty-item {
+                font-size: 0.7rem;
+                padding: 0.2rem 0.4rem;
+            }
+
+            .project-title {
+                font-size: 1.3rem;
+            }
+
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .tech-badges {
+                justify-content: center;
+            }
+
+            .project-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.8rem;
+            }
+        }
+
+        .section-content {
+            max-width: 800px;
+        }
+
+        .about-intro {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #ccd6f6;
+        }
+
+        .about-description {
+            margin-bottom: 2rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .about-description p {
+            font-weight: 700;
+        }
+
+        .skills-section {
+            margin-top: 2rem;
+        }
+
+        .skills-title {
+            color: #ccd6f6;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .skills-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .skill-item {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .skill-item:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #64ffda;
+        }
+
+        .skill-heading {
+            color: #ccd6f6;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .focus-section {
+            margin-top: 3rem;
+        }
+
+        .focus-title {
+            color: #ccd6f6;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .focus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .focus-item {
+            background: rgba(100, 255, 218, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(100, 255, 218, 0.1);
+        }
+
+        .focus-item h4 {
+            color: #64ffda;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .focus-item ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .focus-item li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .focus-item li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #64ffda;
+        }
+
+        .certifications-section {
+            margin-top: 3rem;
+        }
+
+        .certifications-title {
+            color: #ccd6f6;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .certification-category {
+            background: rgba(100, 255, 218, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(100, 255, 218, 0.1);
+        }
+
+        .certification-category h4 {
+            color: #64ffda;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .certification-category ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .certification-category li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.2rem;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .certification-category li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #64ffda;
+        }
+
+        .certification-status {
+            font-size: 0.8rem;
+            color: #8892b0;
+            font-style: italic;
+        }
+
+        .project-item {
+            background: rgba(100, 255, 218, 0.05);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(100, 255, 218, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .project-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-title {
+            color: #ccd6f6;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .project-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-badges {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .tech-badge {
+            background: none;
+            color: inherit;
+            padding: 0;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .tech-badge img {
+            height: 20px;
+            vertical-align: middle;
+        }
+
+        .project-description {
+            color: #8892b0;
+            margin-bottom: 1rem;
+        }
+
+        .project-features {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .project-features li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #64ffda;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link {
+            color: #64ffda;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .project-link:hover {
+            color: #ccd6f6;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem 0;
+        }
+
+        .project-category {
+            margin-bottom: 3rem;
+        }
+
+        .project-category-title {
+            color: #ccd6f6;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-header">
+            <h1>Glauco Oliveira</h1>
+            <div class="specialties">
+                <span class="specialty-item">GPON</span>
+                <span class="specialty-item">Análise de Dados</span>
+                <span class="specialty-item">UX</span>
+                <span class="specialty-item">Cybersecurity</span>
+                <span class="specialty-item">JavaScript</span>
+                <span class="specialty-item">CSS</span>
+                <span class="specialty-item">Linux</span>
+            </div>
+            <p class="nav-description"><strong>Gpon, Análise de Dados, UX, Cybersecurity, JavaScript, CSS, Linux</strong></p>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/Glacoo/glacoo" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/glauco-o-0a062b104/" target="_blank"><i class="fab fa-linkedin"></i></a>
+         </div>
+    </nav>
+
+    <main>
+        <section id="sobre">
+            <h2 class="section-title">Sobre</h2>
+            <div class="section-content">
+                <p class="about-intro">
+                    Formado em Análise e Desenvolvimento de Sistemas, com pós-graduação em Análise de Dados. 
+                    Atualmente, busco oportunidades como Operador GPON, Analista de Dados, UX Designer e Especialista em Cybersecurity.
+                </p>
+
+                <div class="about-description">
+                    <p><strong>Profissional especializado em planejamento, implantação e otimização de redes GPON (Gigabit Passive Optical Network), 
+                    com experiência em infraestrutura de fibra óptica e soluções FTTH (Fiber to the Home). Atuação focada em modelagem de redes passivas, 
+                    garantindo alta capacidade de transmissão, escalabilidade e eficiência operacional. Expertise em projetos de digitalização e automação 
+                    de processos, visando à modernização de fluxos técnicos e à redução de custos.</strong></p>
+                </div>
+
+                <div class="skills-section">
+                    <h3 class="skills-title">Habilidades e Competências em GPON</h3>
+                    <ul class="skills-list">
+                        <li class="skill-item">
+                            <div class="skill-heading">Monitoramento da Rede</div>
+                            <p>Supervisiono o desempenho da rede, garantindo que todos os componentes estejam funcionando corretamente. 
+                            Experiência com softwares específicos como Gerência AMS, OMR, Netwin, SISWEB, entre outros.</p>
+                        </li>
+                        
+                        <li class="skill-item">
+                            <div class="skill-heading">Atendimento Técnico</div>
+                            <p>Ofereço suporte técnico aos técnicos de campo, auxiliando na resolução de problemas 
+                            e garantindo que as intervenções na rede sejam realizadas de maneira eficiente.</p>
+                        </li>
+                        
+                        <li class="skill-item">
+                            <div class="skill-heading">Análise de Dados da Rede</div>
+                            <p>Realizo análise de dados de desempenho da rede para identificar e resolver problemas potenciais 
+                            antes que causem interrupções. Isso inclui a interpretação de relatórios e gráficos gerados 
+                            pelos softwares de monitoramento.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="focus-section">
+                    <h3 class="focus-title">Sou um entusiasta de tecnologia com foco em:</h3>
+                    <div class="focus-grid">
+                        <div class="focus-item">
+                            <h4>Desenvolvimento Front-end</h4>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="focus-item">
+                            <h4>Design de UX</h4>
+                            <ul>
+                                <li>Wireframes</li>
+                                <li>Prototipagem</li>
+                                <li>Pesquisa com Usuários</li>
+                            </ul>
+                        </div>
+                        <div class="focus-item">
+                            <h4>Segurança Cibernética</h4>
+                            <ul>
+                                <li>Testes de Invasão</li>
+                                <li>Segurança de Redes</li>
+                                <li>Análise de Vulnerabilidades</li>
+                            </ul>
+                        </div>
+                        <div class="focus-item">
+                            <h4>Análise de Dados</h4>
+                            <ul>
+                                <li>Visualização de Dados</li>
+                                <li>SQL</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="focus-section">
+                    <h3 class="focus-title">Foco Atual 💡</h3>
+                    <div class="focus-grid">
+                        <div class="focus-item">
+                            <h4>Desenvolvimento Web</h4>
+                            <ul>
+                                <li>Design Responsivo</li>
+                                <li>Frameworks JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="focus-item">
+                            <h4>Design UX</h4>
+                            <ul>
+                                <li>Design Centrado no Usuário</li>
+                                <li>Figma</li>
+                                <li>Adobe XD</li>
+                            </ul>
+                        </div>
+                        <div class="focus-item">
+                            <h4>Segurança Cibernética</h4>
+                            <ul>
+                                <li>OWASP Top 10</li>
+                                <li>Testes de Penetração</li>
+                            </ul>
+                        </div>
+                        <div class="focus-item">
+                            <h4>Análise de Dados</h4>
+                            <ul>
+                                <li>Pandas</li>
+                                <li>Tableau</li>
+                                <li>Narrativa de Dados</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certifications-section">
+                    <h3 class="certifications-title">Certificações e Formação Acadêmica</h3>
+                    <div class="certifications-grid">
+                        <div class="certification-category">
+                            <h4><i class="fas fa-graduation-cap"></i> Formação Acadêmica</h4>
+                            <ul>
+                                <li>Análise e Desenvolvimento de Sistemas (Estácio, concluído em 30/06/2023)</li>
+                                <li>Big Data, Analytics e BI Aplicados aos Negócios (Pós-Graduação, <span class="certification-status">em andamento</span>)</li>
+                                <li>Técnico em Instrumentação Industrial (Senai)</li>
+                                <li>Inglês Intermediário - Leitura, pronúncia e escrita</li>
+                            </ul>
+                        </div>
+
+                        <div class="certification-category">
+                            <h4><i class="fab fa-google"></i> Certificações Google</h4>
+                            <ul>
+                                <li>UX Design</li>
+                                <li>Marketing de Rede</li>
+                                <li>Cybersecurity (<span class="certification-status">em andamento</span>)</li>
+                                <li>Análise de Dados (<span class="certification-status">em andamento</span>)</li>
+                            </ul>
+                        </div>
+
+                        <div class="certification-category">
+                            <h4><i class="fas fa-code"></i> Desenvolvimento</h4>
+                            <ul>
+                                <li>Lógica de Programação: JavaScript - Alura</li>
+                                <li>HTML e CSS - Alura</li>
+                                <li>Git e GitHub - Alura</li>
+                                <li>Versionamento de Código com Git e GitHub - Dio</li>
+                            </ul>
+                        </div>
+
+                        <div class="certification-category">
+                            <h4><i class="fas fa-shield-alt"></i> Segurança e Infraestrutura</h4>
+                            <ul>
+                                <li>Sistemas de Gerenciamento de Banco de Dados - Dio</li>
+                                <li>Fundamentos de Cibersegurança - Dio</li>
+                                <li>Coleta e Análise de Segurança Cibernética - Dio</li>
+                                <li>Conceitos e Técnicas de Varredura de Rede - Dio</li>
+                                <li>Introduction to Cybersecurity - Cisco Network Academy</li>
+                            </ul>
+                        </div>
+
+                        <div class="certification-category">
+                            <h4><i class="fab fa-linux"></i> Linux</h4>
+                            <ul>
+                                <li>Introdução ao Linux com o Santander - Dio</li>
+                                <li>Instalando o Linux - Dio</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <section id="experiencia">
+            <h2 class="section-title">Experiência Profissional</h2>
+            
+            <div class="experience-item">
+                <h3>SEREDE SERVIÇOS DE TELECOMUNICAÇÕES E REDES LTDA</h3>
+                <p>2019 - 2024</p>
+                <p>Experiência em atendimento e monitoramento da rede, com ênfase nos softwares relacionados (Gerência AMS, OMR,
+                    NETWIN, SISWEB e afins).</p>
+                <div class="tech-list">
+                
+                
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2 class="section-title">Projetos Destacados</h2>
+            
+            <div class="project-category">
+                <h3 class="project-category-title"><i class="fas fa-rocket"></i> Projetos de Desenvolvimento</h3>
+                
+                <div class="project-item">
+                    <h3 class="project-title">🔢 Jogo do Número Secreto</h3>
+                    <img src="https://i.ibb.co/9myX0zrC/jogo-do-n-mero-secreto.png" alt="Jogo do Número Secreto" class="project-image">
+                    
+                    <div class="tech-badges">
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" class="tech-badge">
+                            <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5">
+                        </a>
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" class="tech-badge">
+                            <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS3">
+                        </a>
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" class="tech-badge">
+                            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript">
+                        </a>
+                    </div>
+
+                    <p class="project-description">Jogo interativo de adivinhação numérica com validações e feedback visual</p>
+                    
+                    <div class="project-links">
+                        <a href="https://secret-number-beta-ten.vercel.app" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3 class="project-title">🎁 Amigo Secreto Online</h3>
+                    <img src="https://i.ibb.co/0RJqb3Jh/jogo-amigo-secreto.png" alt="Amigo Secreto Online" class="project-image">
+                    
+                    <div class="tech-badges">
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" class="tech-badge">
+                            <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5">
+                        </a>
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" class="tech-badge">
+                            <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS3">
+                        </a>
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" class="tech-badge">
+                            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript">
+                        </a>
+                    </div>
+
+                    <ul class="project-features">
+                        <li>Interface intuitiva para cadastro de participantes</li>
+                        <li>Sistema de sorteio automático</li>
+                        <li>Animações CSS personalizadas</li>
+                    </ul>
+                    
+                    <div class="project-links">
+                        <a href="https://amigo-secreto-bice-seven-84.vercel.app" class="project-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-category">
+                <h3 class="project-category-title"><i class="fas fa-palette"></i> Projetos de UX Design</h3>
+                
+                <div class="project-item">
+                    <h3 class="project-title">🖥️ Web Dev - Design System</h3>
+                    <img src="https://i.ibb.co/k20zBtfx/Captura-de-tela-2025-03-27-052438.png" alt="Web Dev Design System" class="project-image">
+                    
+                    <div class="tech-badges">
+                        <a href="https://www.interaction-design.org/literature/topics/ux-design" class="tech-badge">
+                            <img src="https://img.shields.io/badge/UX_Design-FF6F61?style=flat&logo=adobe-xd&logoColor=white" alt="UX Design">
+                        </a>
+                        <a href="https://owasp.org/" class="tech-badge">
+                            <img src="https://img.shields.io/badge/Segurança_Cibernética-4B0082?style=flat&logo=securityscorecard&logoColor=white" alt="CyberSecurity">
+                        </a>
+                    </div>
+
+                    <p class="project-description">Sistema de design completo para plataforma de educação em desenvolvimento web</p>
+                    
+                    <ul class="project-features">
+                        <li>Componentes reutilizáveis</li>
+                        <li>Guia de estilo detalhado</li>
+                        <li>Fluxo de onboarding</li>
+                        <li>Prototipagem interativa</li>
+                    </ul>
+                    
+                    <div class="project-links">
+                        <a href="https://www.figma.com/design/sDKDQD3nANAi6lplyeUjKl/Web-Dev?node-id=0-1&t=BaBt0qFXhTsozpB7-1" class="project-link" target="_blank">
+                            <i class="fab fa-figma"></i> Ver no Figma
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3 class="project-title">🎟️ TicketPunk - Plataforma de Eventos</h3>
+                    <img src="https://i.ibb.co/5mrXGHq/ticket-punk-2.png" alt="TicketPunk" class="project-image">
+                    
+                    <div class="tech-badges">
+                        <a href="https://www.interaction-design.org/literature/topics/ux-design" class="tech-badge">
+                            <img src="https://img.shields.io/badge/UX_Design-FF6F61?style=flat&logo=adobe-xd&logoColor=white" alt="UX Design">
+                        </a>
+                        <a href="https://towardsdatascience.com/" class="tech-badge">
+                            <img src="https://img.shields.io/badge/Análise_de_Dados-2F5496?style=flat&logo=microsoft-excel&logoColor=white" alt="Data Analysis">
+                        </a>
+                    </div>
+
+                    <ul class="project-features">
+                        <li>Interface de compra de ingressos</li>
+                        <li>Sistema de recomendação</li>
+                        <li>Fluxo de pagamento simplificado</li>
+                        <li>Design responsivo</li>
+                    </ul>
+                    
+                    <div class="project-links">
+                        <a href="https://www.figma.com/design/n0ytRR3ORAnncECHNXiO9u/TicketPunk!!!?node-id=1-170&t=Ef8VdovDbxdf1dE7-1" class="project-link" target="_blank">
+                            <i class="fab fa-figma"></i> Ver no Figma
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
